@@ -1,0 +1,339 @@
+/* ===== Body & Global Styling ===== */
+html {
+    scroll-behavior: smooth; /* 🔹 Smooth scrolling for navbar links */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    margin: 0;
+    padding: 0;
+    color: #003366;
+
+    /* Background image with fallback color */
+    background-image: url("images/image1.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #eef1f4;
+}
+ header {
+      background:url(./img/secure-database-cloud-computing-background-with-digital-tech-lines_1017-53335.jpg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 2em;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+       font-family: "Playwrite NZ Basic", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+    }
+/* ===== Header ===== */
+
+header {
+  background-color: #4a4fe2;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 2em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+/* 🔹 Ensure sections are not hidden behind sticky navbar */
+section, .container {
+    scroll-margin-top: 90px;
+}
+
+/* ===== Section / Container ===== */
+section, .container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* frosted effect */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Fade-in Animation for sections & details ===== */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro, .future, details {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.intro {
+    animation-delay: 0.1s;
+}
+
+details {
+    animation-delay: 0.3s;
+}
+
+.future {
+    animation-delay: 0.5s;
+}
+
+/* ===== Details & Summary ===== */
+details {
+    background-color: #f7fbff;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+details:hover {
+    transform: scale(1.02);
+}
+
+summary {
+    list-style: none;           /* Remove default arrow */
+    -webkit-appearance: none;   
+    -moz-appearance: none;      
+    appearance: none;           
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: #003366;
+    position: relative;         /* for custom arrow */
+    padding-right: 25px;
+}
+
+/* Custom arrow for summary */
+summary::after {
+    content: "➤";               /* arrow symbol */
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+details p, details ul {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* ===== Text Sections ===== */
+.intro, .future {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Section Titles (h2) ===== */
+h2 {
+    background-color: #0f3d91;   /* dark blue background */
+    color: white;                 /* white text */
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* ===== Subtitles (h4) ===== */
+ h4 {
+    text-align: center;       
+    font-size: 1.8em;        
+    font-weight: bold;
+    color: #0f3d91;          
+    background: none;        
+    padding: 0;               
+    margin-bottom: 20px;
+  }
+
+/* ===== Images ===== */
+img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+/* Main image in container */
+.main-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+/* ===== AI Tools Cards ===== */
+.ai-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.ai-card {
+    background: #e8f0fe;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ai-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.ai-card img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* ===== Tools container styling ===== */
+.tools-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Left column: list of tools */
+.tools-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: center; /* centers the <ol> block */
+}
+
+.tools-text ol {
+    padding-left: 0;
+    display: inline-block; /* centers <ol> inside parent */
+    text-align: left;      /* text inside <li> left-aligned */
+}
+
+/* Right column: image + list */
+.tools-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Gradient overlay behind the image */
+.tools-image::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(66,133,244,0.15), rgba(15,61,145,0.15));
+    border-radius: 15px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Main image styling inside tools-image */
+.tools-image .main-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin-bottom: 20px; /* space between image and list */
+    position: relative;   /* above gradient */
+    z-index: 1;
+}
+
+/* ===== List item styling ===== */
+.tools-text li,
+.tools-image li {
+    list-style: none;
+    margin-bottom: 20px;
+    background: #f0f4fa;
+    padding: 15px 20px;
+    border-left: 4px solid #4285F4;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 400px;
+    margin-left: auto;   /* center <li> block */
+    margin-right: auto;  /* center <li> block */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+/* Animate fade-in for list items */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tool names on top of each <li> */
+.tools-text li strong,
+.tools-image li strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #0f3d91;
+}
+
+/* Centered <ol> blocks inside parent container */
+.tools-text ol,
+.tools-image ol {
+    display: inline-block;
+    text-align: left;
+}
+
+/* ===== Hover / Interactive Effects ===== */
+details:hover, .ai-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+/* ===== Navigation ===== */
+nav.home-nav {
+  background: #ffffff;
+  padding: 10px 20px;
+  text-align: center; /* Centers the link */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav.home-nav a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+  margin: 0 15px; /* spacing between links if you add more later */
+}
+
+.ai-card {
+  text-decoration: none;  /* remove underline */
+  color: inherit;         /* keep text color */
+  display: block;          /* ensure block layout for grid */
+}

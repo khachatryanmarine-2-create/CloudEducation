@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<title>Ուսումնական հարթակներ</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+   letter-spacing: 1.2px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f5f8fd;
+    color: #333;
+  }
+
+ header {
+    background:url(./img/secure-database-cloud-computing-background-with-digital-tech-lines_1017-53335.jpg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 2em;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+       font-family: "Playwrite NZ Basic", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+  section {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  section:hover {
+    
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+h2 {
+  color: #4a90e2; /* matches header background */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em; /* optional: make it closer to header size */
+  font-weight: bold; /* optional: match header weight */
+}
+
+  p {
+    margin: 10px 0 20px 0;
+  }
+
+  .tools-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .tools-text {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .tools-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+
+  details {
+    margin-bottom: 15px;
+    border-left: 4px solid #0f3d91;
+    background: #f0f4fa;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition: transform 0.3s, background 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+  }
+
+  details:hover {
+    background: #e0e9ff;
+    transform: translateX(5px);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+  }
+
+
+
+
+
+  details p, details ul {
+    margin: 10px 0 0 0;
+    padding-left: 15px;
+  }
+
+  ul li {
+    margin-bottom: 5px;
+  }
+
+  .main-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0;
+    box-shadow: none;
+    transform: none;
+    opacity: 1;
+    animation: none;
+    transition: none;
+  }
+ header {
+      background:url(./img/secure-database-cloud-computing-background-with-digital-tech-lines_1017-53335.jpg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 2em;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+       font-family: "Playwrite NZ Basic", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+    }
+  .tools-image::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(15,61,145,0.15), rgba(66,133,244,0.15));
+    border-radius: 15px;
+    pointer-events: none;
+  }
+summary{
+  display: flex !important;
+  justify-content: space-between ;
+}
+nav a {
+    text-decoration: none;
+    color: #03299a;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+  @keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0) scale(1);}
+  }
+
+  /* fadeIn delays */
+  details:nth-of-type(1) { animation-delay: 0.2s; }
+  details:nth-of-type(2) { animation-delay: 0.4s; }
+  details:nth-of-type(3) { animation-delay: 0.6s; }
+  details:nth-of-type(4) { animation-delay: 0.8s; }
+
+  @media (max-width: 768px) {
+    .tools-layout {
+      flex-direction: column;
+    }
+    .tools-image {
+      margin-top: 20px;
+    }
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header>Ուսումնական հարթակներ</header>
+<nav class="home-nav">
+   <a href="index.html"><i class="fa fa-home"></i></a>
+  <a href="general.html#general">Ընդհանուր տեղեկություններ</a>
+  <a href="platforms.html">Ուսումնական հարթակներ</a>
+  <a href="google.html">Google կրթական հավելվածներ</a>
+  <a href="ai.html">AI գործիքներ</a>
+  <a href="faq.html">ՀՏՀ</a>
+</nav>
+
+<section>
+<h2>Հիմնական ուսումնական հարթակները</h2>
+<p>Սեղմեք համապատասխան հարթակի անունը՝ տեսնելու մանրամասն ինֆորմացիան։</p>
+
+<div class="tools-layout">
+  <div class="tools-text">
+    <!-- Zoom -->
+    <details>
+      <summary><span>Zoom – Տեսազանգերի հարթակ</span> <img src="./img/Zoom-Logo-PNG-Clipart.png" style="width: 30px;" alt=""></summary>
+      <p><strong>Նպատակ:</strong> Անվտանգ և արդյունավետ առցանց հանդիպումներ, դասընթացներ և սեմինարներ կազմակերպելու համար։</p>
+      <p><strong>Ուսումնական օգտագործումը:</strong></p>
+      <ul>
+        <li>Մանկավարժները կարող են դասեր անցկացնել առցանց՝ տեսադասերի միջոցով։</li>
+        <li>Սովորողները կարող են մասնակցել վիրտուալ դասերին, հարցեր տալ և ինտերակտիվ մասնակցություն ունենալ։</li>
+        <li>Zoom-ի հնարավորություններն են screen sharing (էկրանի կիսած) և breakout rooms (պարտադիր խմբային քննարկումներ)։</li>
+      </ul>
+      <p><strong>Առավելություններ:</strong> Անհատականացված ուսուցում, հեշտ ինտեգրում LMS համակարգերի հետ, առցանց հարմարավետություն։</p>
+   <h2>Zoom հարթակի օգտագործման պաշտոնական ուղեցույց</h2>
+    <p>Այս ուղեցույցը կօգնի ձեզ արագ կողմնորոշվել Zoom-ի հիմնական գործառույթներում:</p>
+
+    <hr>
+
+    <h2>1. Ներբեռնում և գրանցում</h2>
+    <ul>
+        <li><strong>Ներբեռնում:</strong> Այցելեք <a href="https://zoom.us/download">zoom.us/download</a> և ներբեռնեք "Zoom Desktop Client"-ը համակարգչի կամ հավելվածը հեռախոսի համար:</li>
+        <li><strong>Մուտք:</strong> Սեղմեք <b>Sign Up Free</b>՝ նոր հաշիվ բացելու համար, կամ <b>Sign In</b>, եթե արդեն ունեք հաշիվ (կարող եք օգտագործել Google կամ Facebook հաշիվները):</li>
+    </ul>
+
+    <h2>2. Միացում հանդիպմանը (Join)</h2>
+    <p>Հանդիպմանը միանալու համար կա երկու հիմնական եղանակ.</p>
+    <ol>
+        <li>Սեղմել հրավիրողի ուղարկած <strong>հղմանը (Invitation Link)</strong>:</li>
+        <li>Բացել Zoom-ը, սեղմել <b>Join</b> և մուտքագրել <strong>Meeting ID</strong>-ն ու գաղտնաբառը (Passcode):</li>
+    </ol>
+
+    <h2>3. Հանդիպման կառավարման գործիքներ</h2>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Գործիք</th>
+                <th>Նկարագրություն</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Mute / Unmute</b></td>
+                <td>Միացնել կամ անջատել ձեր խոսափողը:</td>
+            </tr>
+            <tr>
+                <td><b>Start / Stop Video</b></td>
+                <td>Կառավարել տեսախցիկի միացումը:</td>
+            </tr>
+            <tr>
+                <td><b>Share Screen</b></td>
+                <td>Ցուցադրել ձեր էկրանի պարունակությունը մասնակիցներին:</td>
+            </tr>
+            <tr>
+                <td><b>Chat</b></td>
+                <td>Գրավոր հաղորդագրություններ ուղարկել բոլորին կամ անհատապես:</td>
+            </tr>
+            <tr>
+                <td><b>Reactions</b></td>
+                <td>Բարձրացնել ձեռք (Raise Hand) կամ արտահայտել էմոցիաներ:</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Zoom AI Companion</h2>
+    <blockquote>
+        <p>Ժամանակակից Zoom-ն առաջարկում է <b>AI Companion</b> գործիքը, որը կարող է ամփոփել հանդիպման բովանդակությունը և առանձնացնել կարևոր կետերը:</p>
+    </blockquote>
+
+    <h2>5. Հանդիպման ավարտ</h2>
+    <p>Եթե դուք մասնակից եք, սեղմեք <span style="color: red;"><b>Leave</b></span>: Եթե կազմակերպիչն եք (Host), սեղմեք <b>End</b> և ընտրեք <i>End Meeting for All</i>:</p>
+
+    <hr>
+    <h2>6. Լրացուցիչ օգնություն և աջակցում</h2>
+    <p>Եթե ունեք տեխնիկական խնդիրներ կամ ցանկանում եք ավելի խորությամբ ուսումնասիրել հարթակը, այցելեք Zoom-ի պաշտոնական ռեսուրսը.</p>
+     <strong>Պաշտոնական աջակցման կենտրոն:</strong> 
+        <a href="https://support.zoom.com/hc/en" target="_blank" style="color: #0056b3; font-weight: bold; text-decoration: none;">
+            Zoom Support Center
+        </a>
+
+    </details>
+
+    <!-- Teams -->
+    <details>
+      <summary> <span>Teams – Համագործակցության գործիք</span>  <img src="./img/Microsoft_Teams.png" style="width: 30px;" alt=""></summary>
+      <p><strong>Նպատակ:</strong> Խումբային համագործակցության և հաղորդակցության կազմակերպում՝ թե՛ ուսումնական, թե՛ աշխատավայրային միջավայրում։</p>
+      <p><strong>Ուսումնական օգտագործումը:</strong></p>
+      <ul>
+        <li>Մանկավարժները կարող են ստեղծել առանձին խմբեր դասերի կամ դասարանների համար։</li>
+        <li>Սովորողները կարող են համագործակցել, քննարկումներ վարել, փաստաթղթեր կիսել և միասին նախագծեր կատարել։</li>
+        <li>Teams-ն ապահովում է ինտեգրում Office 365-ի հետ՝ Word, Excel, PowerPoint ֆայլերի անմիջական խմբագրում։</li>
+      </ul>
+      <p><strong>Առավելություններ:</strong> Արագ կապ մանկավարժների և սովորողների միջև, բոլոր ուսումնական նյութերը մեկ հարթակում, զեկույցներ և առաջադրանքների կառավարում։</p>
+    <h1>Microsoft Teams հարթակի օգտագործման ուղեցույց</h1>
+    <p>Microsoft Teams-ը համագործակցության հզոր հարթակ է, որը միավորում է չաթը, տեսազանգերը և ֆայլերի փոխանակումը:</p>
+
+    <hr>
+
+    <h2>1. Ինչպես սկսել</h2>
+    <ul>
+        <li><strong>Ներբեռնում:</strong> Այցելեք <a href="https://www.microsoft.com/en-us/microsoft-teams/download-app" target="_blank">Microsoft Teams Download</a> էջը համակարգչի կամ հեռախոսի համար:</li>
+        <li><strong>Մուտք:</strong> Օգտագործեք ձեր Microsoft հաշիվը (օրինակ՝ @outlook.com) կամ ձեր կազմակերպության կողմից տրամադրված էլ. փոստը:</li>
+    </ul>
+
+    <h2>2. Հիմնական բաժինները (Sidebar)</h2>
+    <ul>
+        <li><b>Activity (Գործողություններ):</b> Տեսնել բոլոր ծանուցումները, պատասխանները և բաց թողնված զանգերը:</li>
+        <li><b>Chat (Չաթ):</b> Անհատական կամ խմբային նամակագրություն գործընկերների հետ:</li>
+        <li><b>Teams (Թիմեր):</b> Տեսնել այն խմբերը, որոնց անդամակցում եք և մասնակցել քննարկումներին:</li>
+        <li><b>Calendar (Օրացույց):</b> Պլանավորել հանդիպումներ կամ միանալ արդեն նշանակվածներին:</li>
+    </ul>
+
+    <h2>3. Տեսահանդիպումների կառավարում</h2>
+    <table border="1" cellpadding="10" style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr bgcolor="#f2f2f2">
+                <th>Կոճակ / Գործիք</th>
+                <th>Նկարագրություն</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Mic / Camera</b></td>
+                <td>Միացնել կամ անջատել ձայնը և տեսախցիկը:</td>
+            </tr>
+            <tr>
+                <td><b>Share (Էկրանի ցուցադրում)</b></td>
+                <td>Կիսվել էկրանով, պատուհանով կամ PowerPoint պրեզենտացիայով:</td>
+            </tr>
+            <tr>
+                <td><b>Raise Hand (Ձեռք բարձրացնել)</b></td>
+                <td>Հայտնել զեկուցողին, որ հարց ունեք՝ առանց ընդհատելու:</td>
+            </tr>
+            <tr>
+                <td><b>Breakout Rooms</b></td>
+                <td>Մասնակիցներին բաժանել փոքր աշխատանքային խմբերի (կազմակերպչի համար):</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Ֆայլերի հետ աշխատանք</h2>
+    <p>Teams-ը ինտեգրված է <b>OneDrive</b>-ի և <b>SharePoint</b>-ի հետ: Դուք կարող եք ուղարկել ֆայլեր հենց չաթում, և մի քանի հոգով միաժամանակ խմբագրել Word կամ Excel փաստաթղթերը:</p>
+
+    <h2>5. Պաշտոնական աջակցություն</h2>
+   
+        <strong>Օգնության կենտրոն:</strong> 
+        <a href="https://support.microsoft.com/teams" target="_blank" style="color: #6264a7; font-weight: bold; text-decoration: none;">
+            Microsoft Teams Support Center
+        </a>
+
+
+    <hr>
+    <p align="center">© Microsoft Teams Help Guide</p>
+    
+    </details>
+
+    <!-- Moodle -->
+    <details>
+      <summary> <span>Moodle – Ուսումնական կառավարման համակարգ (LMS)</span>  <img src="./img/Moodle-Logo.wine.svg" style="width: 80px;" alt=""></summary>
+      <p><strong>Նպատակ:</strong> Առցանց ուսուցման ամբողջական կառավարման և կազմակերպման հարթակ։</p>
+      <p><strong>Ուսումնական օգտագործումը:</strong></p>
+      <ul>
+        <li>Դասերը կարող են ստեղծվել առցանց՝ նյութերով, տեսանյութերով, տեքստային առաջադրանքներով։</li>
+        <li>Սովորողները կարող են կատարել առաջադրանքներ, մասնակցել թեստերին և ստանալ գնահատականներ։</li>
+        <li>Մանկավարժները կարող են հետևել ուսանողների առաջընթացին և կարգավորել դասացուցակները։</li>
+      </ul>
+      <p><strong>Առավելություններ:</strong> Համապարփակ ուսուցում, անհատականացված առաջընթացի վերահսկում, լայն հնարավորություններ դասերի կառավարմանը և գնահատմանը։</p>
+    <h1>Moodle Ուսումնական հարթակի օգտագործման ուղեցույց</h1>
+    <p>Moodle-ը աշխարհի ամենատարածված ուսուցման կառավարման համակարգն է (LMS), որը հնարավորություն է տալիս իրականացնել առցանց դասընթացներ:</p>
+
+    <hr>
+
+    <h2>1. Մուտք և անձնական էջ (Dashboard)</h2>
+    <ul>
+        <li><strong>Մուտք:</strong> Յուրաքանչյուր ուսումնական հաստատություն ունի իր սեփական հղումը (օրինակ՝ moodle.university.am): Մուտք գործեք ձեր տրամադրված օգտանունով և գաղտնաբառով:</li>
+        <li><strong>Dashboard:</strong> Սա ձեր գլխավոր էջն է, որտեղ տեսնում եք ձեր բոլոր ակտիվ դասընթացները և առաջիկա վերջնաժամկետները (Deadlines):</li>
+    </ul>
+
+    <h2>2. Դասընթացի կառուցվածքը</h2>
+    <p>Յուրաքանչյուր դասընթաց սովորաբար բաժանված է շաբաթների կամ թեմաների, որտեղ կգտնեք.</p>
+    <ul>
+        <li><b>Resources:</b> Դասախոսությունների տեքստեր, PDF ֆայլեր, տեսանյութեր կամ հղումներ:</li>
+        <li><b>Activities:</b> Ինտերակտիվ բաժիններ, ինչպիսիք են թեստերը, ֆորումները և առաջադրանքները:</li>
+    </ul>
+
+    <h2>3. Առաջադրանքների հանձնում (Assignments)</h2>
+    <table border="1" cellpadding="10" style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr bgcolor="#f2f2f2">
+                <th>Գործողություն</th>
+                <th>Նկարագրություն</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Add Submission</b></td>
+                <td>Սեղմեք այս կոճակը՝ ձեր ֆայլը (Word, PDF և այլն) վերբեռնելու համար:</td>
+            </tr>
+            <tr>
+                <td><b>Status</b></td>
+                <td>Ստուգեք՝ արդյոք աշխատանքը հանձնված է (Submitted for grading), թե դեռ սևագիր է (Draft):</td>
+            </tr>
+            <tr>
+                <td><b>Quizzes (Թեստեր)</b></td>
+                <td>Ժամանակով սահմանափակված հարցաշարեր, որոնք հաճախ ավտոմատ ստուգվում են համակարգի կողմից:</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Հաղորդակցություն</h2>
+    <ul>
+        <li><b>Messages:</b> Օգտագործեք ներքին նամակագրությունը դասախոսների կամ կուրսակիցների հետ կապ հաստատելու համար:</li>
+        <li><b>Forums:</b> Մասնակցեք թեմատիկ քննարկումներին՝ թողնելով մեկնաբանություններ կամ հարցեր:</li>
+    </ul>
+
+    <h2>5. Պաշտոնական աջակցություն և ռեսուրսներ</h2>
+
+        <strong>Moodle-ի պաշտոնական փաստաթղթերը:</strong> 
+        <a href="https://docs.moodle.org" target="_blank" style="color: #d9700b; font-weight: bold; text-decoration: none;">
+            Moodle Documentation (All Versions)
+        </a>
+
+
+    <p style="margin-top: 20px;"><i>Խորհուրդ. Ներբեռնեք <b>Moodle App</b>-ը App Store-ից կամ Play Store-ից՝ դասընթացներին հեռախոսով հետևելու համար:</i></p>
+
+    <hr>
+    <p align="center">© Moodle LMS Armenian Guide</p>
+    </details>
+
+    <!-- Dropbox -->
+    <details>
+      <summary> <span>Dropbox – Ֆայլերի պահպանում ամպում </span><img src="./img/dropbox-2-logo-png-transparent.png" style="width: 30px;" alt=""></summary>
+      <p><strong>Նպատակ:</strong> Ֆայլերի, փաստաթղթերի և մեդիա նյութերի անվտանգ պահպանում և կիսում։</p>
+      <p><strong>Ուսումնական օգտագործումը:</strong></p>
+      <ul>
+        <li>Մանկավարժները կարող են կիսել ուսումնական նյութերը և ներկայացնել ուսանողներին հասանելի ֆայլերը։</li>
+        <li>Սովորողները կարող են ներկայացնել աշխատանքները և նախագծերը առցանց՝ առանց ֆիզիկական փոխանցման անհրաժեշտության։</li>
+        <li>Dropbox-ը աջակցում է տարբեր ֆայլերի տեսակների՝ PDF, Word, Excel, PowerPoint, տեսանյութեր և նկարներ։</li>
+      </ul>
+      <p><strong>Առավելություններ:</strong> Հեշտ կիսում, անվտանգ պահպանում, ցանկացած սարքից հասանելիություն, միասնական ֆայլերի կառավարմամբ աշխատանք։</p>
+    <h1>Dropbox ամպային տիրույթի օգտագործման ուղեցույց</h1>
+    <p>Dropbox-ը ֆայլերի պահպանման և համաժամանակեցման (sync) հարթակ է, որը թույլ է տալիս մուտք գործել ձեր տվյալներին ցանկացած սարքից:</p>
+
+    <hr>
+
+    <h2>1. Ներբեռնում և տեղադրում</h2>
+    <ul>
+        <li><strong>Dropbox Desktop:</strong> Ներբեռնեք հավելվածը <a href="https://www.dropbox.com/install" target="_blank">dropbox.com/install</a> հասցեից: Այն կստեղծի հատուկ թղթապանակ ձեր համակարգչում:</li>
+        <li><strong>Mobile App:</strong> Տեղադրեք հավելվածը հեռախոսի վրա՝ լուսանկարները ավտոմատ կերպով ամպում պահելու համար:</li>
+    </ul>
+
+    <h2>2. Ֆայլերի ավելացում և կառավարում</h2>
+    <p>Ֆայլեր ավելացնելու համար կարող եք պարզապես քաշել և գցել (Drag & Drop) դրանք Dropbox թղթապանակի մեջ կամ օգտվել վեբ տարբերակից.</p>
+    <ul>
+        <li><b>Upload:</b> Վերբեռնել առանձին ֆայլեր կամ ամբողջական թղթապանակներ:</li>
+        <li><b>Create:</b> Ստեղծել նոր Word, Excel կամ Google Docs փաստաթղթեր հենց Dropbox-ի մեջ:</li>
+    </ul>
+
+    <h2>3. Ֆայլերով կիսվելը (Sharing)</h2>
+    <table border="1" cellpadding="10" style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr bgcolor="#f2f2f2">
+                <th>Գործողություն</th>
+                <th>Նկարագրություն</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Copy Link</b></td>
+                <td>Ստեղծել հղում, որով ցանկացած մարդ կարող է դիտել կամ ներբեռնել ֆայլը:</td>
+            </tr>
+            <tr>
+                <td><b>Invite to Folder</b></td>
+                <td>Հրավիրել գործընկերներին խմբագրելու թղթապանակի պարունակությունը:</td>
+            </tr>
+            <tr>
+                <td><b>File Requests</b></td>
+                <td>Ուղարկել հարցում այլ մարդկանց, որպեսզի նրանք ֆայլեր վերբեռնեն ձեր Dropbox (նույնիսկ եթե նրանք հաշիվ չունեն):</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Dropbox Paper</h2>
+    <blockquote>
+        <p><b>Dropbox Paper</b>-ը համատեղ աշխատանքի համար նախատեսված տարածք է, որտեղ թիմերը կարող են միաժամանակ գրել տեքստեր, ավելացնել առաջադրանքներ և մեկնաբանել միմյանց աշխատանքը:</p>
+    </blockquote>
+
+    <h2>5. Պաշտոնական աջակցություն</h2>
+    
+        <strong>Օգնության կենտրոն:</strong> 
+        <a href="https://help.dropbox.com" target="_blank" style="color: #0061ff; font-weight: bold; text-decoration: none;">
+            Dropbox Help Center
+        </a>
+  
+
+    <hr>
+    <p align="center">© Dropbox Armenian Quick Start Guide</p>
+    </details>
+  </div>
+
+  <!-- <div class="tools-image">
+    <img src="images/image3.png" alt="Ուսումնական հարթակներ" class="main-image">
+  </div> -->
+</div>
+
+</section>
+
+<script>
+  // Accordion behavior: only one details open at a time
+  const detailsElements = document.querySelectorAll('.tools-text details');
+
+  detailsElements.forEach((detail) => {
+    detail.addEventListener('click', () => {
+      detailsElements.forEach((other) => {
+        if (other !== detail) {
+          other.removeAttribute('open');
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

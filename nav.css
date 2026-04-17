@@ -1,0 +1,74 @@
+/* ===== Navigation ===== */
+nav {
+    position: sticky;   /* 🔹 Always visible */
+    top: 0;
+    background-color: #ffffff;
+    padding: 12px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #03299a;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #003366;
+}
+
+/* ===== Navigation Center Fix ===== */
+nav.home-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+ 
+  
+}
+
+nav.home-nav a {
+    text-decoration: none;
+    color: #4285F4;
+    margin: 0 18px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav.home-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #0f3d91;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+nav.home-nav a:hover::after {
+    width: 100%;
+}
+
+nav.home-nav a:hover {
+    color: #0f3d91;
+}
+nav a {
+    text-decoration: none;
+    color: #03299a !important;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s;
+}

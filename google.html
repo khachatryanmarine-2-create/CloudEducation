@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<title>Google կրթական հավելվածներ</title>
+<style>
+/* ===== Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* ===== Body & Global Styling ===== */
+html {
+    scroll-behavior: smooth;
+}
+body {
+   letter-spacing: 1.2px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #003366;
+    background: #f5f8fd;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background 0.5s ease-in-out;
+}
+ header {
+         background:url(./img/secure-database-cloud-computing-background-with-digital-tech-lines_1017-53335.jpg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 2em;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+       font-family: "Playwrite NZ Basic", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+    }
+/* ===== Header ===== */
+header {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 2em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* ===== Section ===== */
+  section {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .info {
+    background: white;
+    width: 90%;
+    max-width: 700px;
+    max-height: 85vh; /* Էկրանի բարձրության 85%-ը */
+    border-radius: 12px;
+    position: relative; /* Ոչ թե fixed, այլ relative */
+    padding: 20px;
+    overflow-y: auto;   /* Սա միացնում է սքրոլը */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+  section:hover {
+    
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+h2 {
+  color: #0f3d91; /* matches header background */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em; /* optional: make it closer to header size */
+  font-weight: bold; /* optional: match header weight */
+}
+
+section p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+/* ===== Tools Layout ===== */
+.tools-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tools-text,
+.tools-image {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== List / Card Styling ===== */
+.tools-text ol,
+.tools-image ol {
+    width: 100%;
+    padding-left: 0;
+}
+
+.tools-text li,
+.tools-image li {
+    list-style: none;
+    margin-bottom: 25px;
+    padding: 20px 25px;
+    background: linear-gradient(135deg, #f0f4fa, #d9e6f8);
+    border-radius: 15px;
+    border-left: 6px solid #4285F4;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #003366;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.tools-text li:hover,
+.tools-image li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(66,133,244,0.3);
+    border-left-color: #0f3d91;
+}
+
+.tools-text li strong,
+.tools-image li strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #0f3d91;
+}
+
+/* ===== Main Image ===== */
+.main-image {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+    transition: transform 0.5s;
+}
+
+.main-image:hover {
+    transform: scale(1.05) rotate(-1deg);
+}
+
+
+
+#fon{position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transform: scale(0);
+    transition: 0.4s;}
+#x{position: fixed; /* Սա ամենակարևորն է. սքրոլ անելիս X-ը կմնա վերևում */
+    top: 20px;
+  right:20px ;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    z-index: 10;
+    background: white; /* Որպեսզի տեքստի վրայով անցնելիս տակը չերևա */
+    padding: 5px 10px;
+    border-radius: 50%;}
+
+table{width: 100%;text-align: left; margin: 10px 0; padding: 0;}
+td{padding: 3px 0;}
+li{padding: 3px 0; list-style: none;}
+ul{padding-left: 0;margin: 10px 0;}
+h2{font-size: 24px;text-align: left; margin: 0px;}
+
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tools-text li:nth-of-type(1),
+.tools-image li:nth-of-type(1) { animation: fadeInUp 0.6s forwards 0.2s; }
+.tools-text li:nth-of-type(2),
+.tools-image li:nth-of-type(2) { animation: fadeInUp 0.6s forwards 0.4s; }
+.tools-text li:nth-of-type(3),
+.tools-image li:nth-of-type(3) { animation: fadeInUp 0.6s forwards 0.6s; }
+.tools-text li:nth-of-type(4),
+.tools-image li:nth-of-type(4) { animation: fadeInUp 0.6s forwards 0.8s; }
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .tools-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        width: 95%;
+    }
+    .tools-text ol,
+    .tools-image ol {
+        max-width: 95%;
+    }
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header>Google հավելվածներ կրթության մեջ</header>
+
+<nav class="home-nav">
+   <a href="index.html"><i class="fa fa-home"></i></a>
+  <a href="general.html#general">Ընդհանուր տեղեկություններ</a>
+  <a href="platforms.html">Ուսումնական հարթակներ</a>
+  <a href="google.html">Google կրթական հավելվածներ</a>
+  <a href="ai.html">AI գործիքներ</a>
+  <a href="faq.html">ՀՏՀ</a>
+</nav>
+
+<section>
+<h2>Google գործիքակազմ</h2>
+<p>Google-ը առաջարկում է բազմաթիվ գործիքներ, որոնք արդյունավետորեն կարող են օգտագործվել կրթության գործընթացում՝ դասավանդման, սովորողների մասնակցության, նախագծերի կառավարման և թիմային աշխատանքի համար։ Ահա հիմնական գործիքները՝</p>
+
+<div class="tools-layout">
+
+  <div class="tools-text">
+    <ol>
+      <li class="popup" id="1">
+        <strong>Google Classroom</strong>
+        Դա հիմնական հարթակն է դասերի կազմակերպման և տնային հանձնարարությունների կառավարման համար։<br>
+        Մանկավարժները կարող են ստեղծել դասեր, հանձնարարություններ ուղարկել, գնահատել աշխատանքները և հաղորդակցվել սովորողների հետ։<br>
+        Սովորողները կարող են ներկայացնել իրենց աշխատանքները, մասնակցել քննարկումներին և ստանալ վերագրեր։
+      </li>
+      <li class="popup" id="2">
+        <strong>Google Docs</strong>
+        Համատեղ աշխատելու հարմար գործիք, որը թույլ է տալիս միաժամանակ խմբերով խմբագրել փաստաթղթեր։<br>
+        Հարմար է խմբային նախագծերի, հաշվետվությունների և նշումների համար։
+      </li>
+      <li class="popup" id="3">
+        <strong>Google Slides</strong>
+        Ներկայացումների պատրաստման գործիք, որը թույլ է տալիս ստեղծել ինտերակտիվ սլայդշոուներ։<br>
+        Սովորողները կարող են ներկայացնել իրենց նախագծերը և մանկավարժները կարող են մեկնաբանություններ թողնել անմիջապես սլայդների վրա։
+      </li>
+      <li class="popup" id="4">
+        <strong>Google Sheets</strong>
+        Տվյալների կազմակերպման և վերլուծության գործիք, որը հարմար է հաշվարկների, վիճակագրական վերլուծությունների և նախագծերի համար։<br>
+        Կարող է օգտագործվել նաև գնահատման թերթիկների և դասերի պլանավորման համար։
+      </li>
+    </ol>
+  </div>
+
+  <div class="tools-image">
+    <img src="images/image4.png" alt="Google tools" class="main-image">
+    <ol>
+      <li class="popup" id="5">
+        <strong>Google Forms</strong>
+        Մանկավարժները կարող են ստեղծել հարցումներ, թեստեր և հետադարձ կապ ստանալ ուսանողներից։<br>
+        Օգտակար է ուսուցման գնահատման, զեկույցների և ակադեմիական հետազոտությունների համար։
+      </li>
+      <li class="popup" id="6">
+        <strong>Google Meet</strong>
+        Տվյալների առցանց դասերի և հանդիպումների հարթակ։<br>
+        Հարմար է հեռավար ուսուցման, քննարկումների և խորհրդակցությունների համար։
+      </li>
+      <li class="popup" id="7">
+        <strong>Google Drive</strong>
+        Մեկտեղ պահելու և կիսվելու բոլոր կրթական նյութերը։<br>
+        Սովորողներն ու մանկավարժները կարող են պահպանել փաստաթղթեր, սլայդներ, աղյուսակներ և տեսանյութեր, և հեշտությամբ հասանելի դարձնել թիմին։
+      </li>
+      <li class="popup" id="8">
+        <strong>Google Keep</strong>
+        Նշումների, առաջադրանքների և հիշեցումների կառավարման գործիք։<br>
+        Օգտակար է սովորողների համար՝ դասերը կազմակերպելու և հիշեցումներ ստանալու համար։
+      </li>
+    </ol>
+  </div>
+
+</div>
+</section>
+<div id="fon">
+  <div id="x">X</div>
+  <div class="info" id="inf">
+   
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
