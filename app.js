@@ -32,7 +32,7 @@ rows:[
 ["Grades","Գնահատականների վերահսկում։"]
 ]},
 
-{type:"link",label:"Classroom Աջակցման Կենտրոն",url:"https://support.google.com/edu/classroom"}
+{type:"link",label:"Classroom",url:"https://support.google.com/edu/classroom"}
 ]
 },
 
@@ -58,7 +58,7 @@ rows:[
 ["Version History","Փոփոխությունների պատմություն։"]
 ]},
 
-{type:"link",label:"Docs Աջակցման Կենտրոն",url:"https://support.google.com/docs"}
+{type:"link",label:"Docs",url:"https://support.google.com/docs"}
 ]
 },
 
@@ -84,7 +84,7 @@ rows:[
 ["Speaker Notes","Զեկուցողի նշումներ։"]
 ]},
 
-{type:"link",label:"Slides Աջակցման Կենտրոն",url:"https://support.google.com/docs"}
+{type:"link",label:"Slides",url:"https://support.google.com/docs"}
 ]
 },
 
@@ -110,7 +110,7 @@ rows:[
 ["Filters","Տվյալների զտում։"]
 ]},
 
-{type:"link",label:"Sheets Աջակցման Կենտրոն",url:"https://support.google.com/docs"}
+{type:"link",label:"Sheets",url:"https://support.google.com/docs"}
 ]
 },
 
@@ -137,7 +137,7 @@ rows:[
 ["Settings","Թեստի կարգավորումներ։"]
 ]},
 
-{type:"link",label:"Forms Աջակցման Կենտրոն",url:"https://support.google.com/docs"},
+{type:"link",label:"Forms",url:"https://support.google.com/docs"},
 {type:"video",label:"Տեսանյութ",url:"./f.mp4"},
 ]
 },
@@ -164,7 +164,7 @@ rows:[
 ["Record","Հանդիպման ձայնագրում (Education)։"]
 ]},
 
-{type:"link",label:"Meet Աջակցման Կենտրոն",url:"https://support.google.com/meet"}
+{type:"link",label:"Meet",url:"https://support.google.com/meet"}
 ]
 },
 
@@ -189,7 +189,7 @@ rows:[
 ["Sync","Համաժամանակեցում համակարգչի հետ։"]
 ]},
 
-{type:"link",label:"Drive Աջակցման Կենտրոն",url:"https://support.google.com/drive"},
+{type:"link",label:"Drive",url:"https://support.google.com/drive"},
 {type:"video",label:"Տեսանյութ",url:"./d.mp4"},
 ]
 },
@@ -216,7 +216,7 @@ rows:[
 ["Reminders","Ժամանակային հիշեցումներ։"]
 ]},
 
-{type:"link",label:"Keep Աջակցման Կենտրոն",url:"https://support.google.com/keep"}
+{type:"link",label:"Keep",url:"https://support.google.com/keep"}
 ]
 }
 
